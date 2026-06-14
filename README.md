@@ -1,2 +1,0 @@
-# Lelantos
-telegram tipper tracker
