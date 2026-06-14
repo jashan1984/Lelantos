@@ -97,3 +97,10 @@ async def main():
                     await client.send_message(MY_CHAT_ID, alert)
                     print(f"✅ Executed trade log and alert for {channel}")
                 else:
+                    print(f"⏩ Ignored noise: {trade_type}")
+                    
+        except Exception as e:
+            print(f"❌ Error scanning {channel}: {e}")
+
+if __name__ == "__main__":
+    client.loop.run_until_complete(main())
